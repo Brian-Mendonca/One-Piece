@@ -1,0 +1,25 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(139, 155, 169);
+}
+.top-bar{
+    height: 100.8;
+    width: 1519.2;
+    display: inline-block;
+}
+
+.retina{
+    padding: 20px 20px;
+    width: 188px;
+}
+
+.top-bar-left a{
+    padding: 20px 0px;
+}
+
+.navbar-left{
+    margin-right: 20px;
+}
