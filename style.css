@@ -3,8 +3,17 @@ html{
     margin: 0;
 }
 body{
-    background-color: rgb(139, 155, 169);
+    background-color: rgb(228, 234, 239);
+    background-color: #edf3f8;
 }
+div{
+    display: block;
+}
+
+ul{
+    list-style: none outside;
+}
+
 .top-bar{
     height: 100.8;
     width: 1519.2;
@@ -22,4 +31,70 @@ body{
 
 .navbar-left{
     margin-right: 20px;
+}
+
+/* Footer CSS */
+footer{
+    color: black;
+    background-color: inherit;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: auto;
+    width: 100%;
+    align-items: center;
+}
+
+#Footer .container{
+    max-width: 1060px;
+}
+
+footer .widgets-wrapper{
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+footer .no-line{
+    color: transparent;
+}
+
+footer a{
+    color: #2e5aa8;
+}
+.footer-copy{
+    border-top: 0.8 solid rgba(255,255,255,0.1);
+    margin-top: 30px;
+    padding: 15px 0 15px;
+}
+
+footer .footer-copy .container2{
+    max-width: 1060px;
+}
+
+footer .footer-copy .container2{
+    position: relative;
+    font-family: inherit;
+    margin: 0 auto;
+}
+
+footer .column.one{
+    margin: 0 10px 0 10px;
+}
+
+footer .social-menu{
+    display: flex;
+    float: right;
+    margin-right: 20px;
+
+}
+
+footer ul{
+    vertical-align: baseline;
+}
+
+footer .social-menu li{
+    display: block;
+    margin-right: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
 }
