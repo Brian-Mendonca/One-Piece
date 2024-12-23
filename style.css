@@ -2,10 +2,14 @@ html{
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: rgb(228, 234, 239);
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
     background-color: #edf3f8;
 }
+
 div{
     display: block;
 }
@@ -14,9 +18,15 @@ ul{
     list-style: none outside;
 }
 
+/* Navbar CSS */
+nav{
+    position: relative;
+    z-index: 3;
+    background-color: transparent;
+}
 .top-bar{
     height: 100.8;
-    width: 1519.2;
+    width: 100vw;
     display: inline-block;
 }
 
@@ -31,6 +41,144 @@ ul{
 
 .navbar-left{
     margin-right: 20px;
+}
+
+/* Slider CSS */
+.hero-slider{
+    display: flex;
+}
+
+.slider-container {
+    position: relative;
+    z-index: 1;
+	display: flex;
+    right: 0;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
+
+.slider-container h1 {
+	color: #fff;
+	font-size: 100px;
+	letter-spacing: 5px;
+	position: relative;
+	z-index: 100;
+	text-align: center;
+}
+
+.slider-container::after {
+	/* content: ''; */
+	position: absolute;
+	top: 0;
+	/* left: 50%; */
+	height: 100%;
+	width: 50%;
+	z-index: 1;
+}
+
+.slide {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 0;
+	/* left: 50%; */
+	opacity: 0;
+	height: 100%;
+	width: 50%;
+	transform: scale(1.15);
+	transition: opacity .6s ease;
+}
+
+.slide.active {
+	animation: grow 4s linear forwards;
+	opacity: 1;
+}
+
+@keyframes grow {
+	0%, 20% {
+		transform: scale(1);
+	}
+	
+	75%, 100% {
+		transform: scale(1.15);
+	}
+}
+
+.controls-container {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	display: flex;
+	flex-direction: column;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+.control {
+    position: relative;
+    border: 3px solid white;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 6px;
+	height: 16px;
+	width: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+	transition: opacity 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.control::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: height 0.8s ease;
+}
+
+.control.active::before,
+.control:hover::before{
+    height: 100%;
+}
+
+.control.active,
+.control:hover {
+    opacity: 1;
+}
+
+.content {
+    background-repeat: no-repeat;
+}
+
+/* Content CSS */
+
+/* MCB Section  */
+.mcb-section{
+    background-image: url('images/clean-home-horizontal-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mcb-section img{
+    position: relative;
+    transform: translate(50% 50%);
+}
+
+.mcb-column{
+    /* margin: 0 1% 40px 1%; */
+    border: 14px solid black;
+}
+
+.mcb-container{
+    /* margin: 0 auto; */
 }
 
 /* Footer CSS */
