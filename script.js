@@ -33,3 +33,24 @@ controls.forEach(control => {
 		int = setInterval(changeSlides, 4000);
 	});
 });
+
+
+// Navbar JS 
+document.addEventListener('DOMContentLoaded', () => {
+    // Get the current page's URL path
+    const currentPage = window.location.pathname;
+
+    // Select all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+    // Loop through each link
+    navLinks.forEach(link => {
+        // Compare the href with the current page path
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+
+

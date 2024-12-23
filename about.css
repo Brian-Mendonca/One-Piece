@@ -3,14 +3,68 @@ html {
   margin: 0;
 }
 
-
-
-.navbar {
+/* Navbar CSS  */
+nav.navbar{
   position: absolute; 
   top: 0;
+  left: 0;
+  z-index: 1000;
   width: 100%;
-  z-index: 10;
+  background-color: transparent;
 }
+
+.navbar .container{
+  max-width: 98%;
+}
+
+.top-bar{
+  height: 100.8;
+  width: 100vw;
+  display: inline-block;
+}
+
+.retina{
+  padding: 20px 20px;
+  width: 188px;
+}
+
+.top-bar-left a{
+  padding: 20px 0px;
+}
+
+.navbar-left{
+  margin-right: 20px;
+}
+
+.navbar-nav{
+  font-weight: bold;
+}
+
+.nav-item2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbarNav ul li a{
+  color: #fff ;
+}   
+
+#Nav-item a:hover{
+  color: #44d6fe;
+}
+
+#Nav-item .nav-link.active{
+  color: #44d6fe;
+}
+
+.buy-button{
+  background-color: #2e5aa8;
+  height: 41px;
+  width: 115px;
+}
+
+
 
 
 .bg-image {
