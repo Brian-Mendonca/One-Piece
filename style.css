@@ -275,6 +275,56 @@ nav.navbar{
     color: #000;;
 }
 
+/* Services and Services CSS  */
+/* Services Section */
+.services-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.services-text {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 400px;
+}
+
+.service-service{
+    height: 540 !important;
+}
+
+/* Left Half Image */
+.half-image-left {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    background: url('images/BeCleaner 2 – BeTheme/clean-home-icon-bg.png') no-repeat center;
+    background-size: contain;
+    height: 150px;
+    width: 100%;
+    z-index: 0;
+}
+
+/* Right Half Image */
+.half-image-right {
+    position: absolute;
+    top: 50%;
+    right: 94.7%;
+    transform: translate(50%, -50%);
+    background: url('images/BeCleaner 2 – BeTheme/clean-home-icon-bg-2.png') no-repeat center;
+    background-size: contain;
+    height: 150px;
+    width: 100%;
+    z-index: 0;
+}
+
+/* Content Layers */
+.col-lg-6 > * {
+    z-index: 1;
+}
+
+
 /* Footer CSS */
 footer{
     color: black;
