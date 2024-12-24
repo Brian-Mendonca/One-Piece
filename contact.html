@@ -1,116 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>contact</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Contact - One Piece</title>
-</head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img class="" src="images/logo.png" alt="Logo" width="188">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse hover-bg-primary" id="navbarNav">
-                <ul id="Nav-item" class="navbar-nav ms-auto">
-                    <li class="nav-item2"><a class="nav-link text-decoration-none px-4" href="/home.html">Home</a></li>
-                    <li class="nav-item2"><a class="nav-link text-decoration-none px-4" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item2"><a class="nav-link text-decoration-none px-4"
-                            href="/service.html">Services</a></li>
-                    <li class="nav-item2"><a class="nav-link text-decoration-none px-4" href="/pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item2"><a class="nav-link text-decoration-none px-4" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
-                <a href="#"
-                    class=" d-flex buy-button text-decoration-none text-white align-items-center justify-content-center ms-3">BUY
-                    NOW</a>
+        <link rel="stylesheet" href="contact.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/contactimg/logo.png" alt="Logo" width="188" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pl-5 pr-5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link color-change"
+                                href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link color-change"
+                                href="about.html">About</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link color-change"
+                                href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link color-change"
+                                href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link color-change"
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-
-
-    <!-- Footer  -->
-    <!-- Footer Section -->
-    <footer id="Footer" class="bg-light text-center py-2" style="background-image: url('images/fullblue.png');">
-        <div class="container1">
-
-            <!-- Logo and Description -->
-            <div class=" widgets-wrapper container">
-                <aside class="widgets">
-                    <img src="images/logo.png" height="84" class="justify-content-center align-items-center">
-                    <hr class="no-line" style="margin: 0 auto 20px auto">
-                </aside>
-
-                <p class="text-secondary">Nulla mauris dolor, gravida a varius blandit, auctor eget purus. <br>
-                    Phasellus scelerisque sapien sit amet mauris laoreet, eget.</p>
+            <div class="navbar-left">
+                <button type="button" class="btn btn-primary ml-5">BUY
+                    NOW</button>
             </div>
-        </div>
+        </nav>
 
-        <div class="footer-copy">
-            <div class="container2">
+        <!-- ll------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
-                <div class="d-flex justify-content-between column one">
-                    <p class="text-secondary mb-0">
-                        &copy; 2021 Betheme by <a href="#" class="text-decoration-none">Muffin
-                            Group</a> | All Rights Reserved | Powered by <a href="#"
-                            class="text-decoration-none">WordPress</a>
-                    </p>
-                    <div class="links">
-                        <ul class="menu social-menu">
-                            <li class="menu-item"><a href="#" class="text-secondary text-decoration-none">About us</a>
-                            </li>
-                            <li class="menu-item"><a href="#" class="text-secondary text-decoration-none">Pricing</a>
-                            </li>
-                            <li class="menu-item"><a href="#" class="text-secondary text-decoration-none">Services</a>
-                            </li>
-                            <li class="menu-item"><a href="#" class="text-secondary text-decoration-none">Contact</a>
-                            </li>
-                        </ul>
-
-                    </div>
+        <div
+            class="bg-image img-fluid vh-100 w-100 position-relative"
+            style="
+        background-image: url('/contactimg/contbg.png');
+        background-size: cover;
+        background-position: center;
+      ">
+            <div
+                class="overlay position-absolute top-50 start-0 translate-middle-y text-left text-black px-4 m-lg-5">
+                <div class="item-wraper">
+                    <img src="/contactimg/image.png" alt="Luffy Icon"
+                        class="mb-2 icon-size" width="50px">
+                    <h1
+                        class="fw-bold custom-font-size custom-font-1 text-left m-lg-1"
+                        style="align-items: left">
+                        Feel free to <br />contact with us
+                    </h1>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <!-- kk------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+        <div class="bg-size-contain ">
+            <div class="container mt-5 ">
+                <div class>
+                    <p
+                        class="fw-bold fs-5 text-center custom-color-1 mt-5 custom-font-1">
+                        Contact info
+                    </p>
+                    <br />
+                    <p class="text-center fw-bold fs-1 custom-font-1">Do you
+                        have a question?</p>
+                </div>
+                <div class="row mt-4 pt-5">
+                    <div class="col-md-6 mb-4 ">
+
+                        <img src="/contactimg/Untitled design.png" alt="Experience"
+                            class="w-100" />
+
+                    </div>
+
+                    <div class="col-md-6 fs-6 fw-medium pt-5">
+                    
+                        <div class="p-5">
+                            <h5><i class="icon-font-heading"></i> <svg
+                                    class="icon-sz11 p-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960" width="24px"
+                                    fill="#75FBFD"><path
+                                        d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" /></svg>
+                                phone</h5>
+                            <p class="icon-font">91-80102666</p>
+                            <p class="fnt2 fs-6">Monday - Friday, 9:00 AM - 6:00
+                                PM</p>
+
+                        </div>
+
+                        <div class="p-5">
+
+                         
+                            <h5><i class><svg class="icon-sz11 p-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#75FBFD"><path
+                                            d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z" /></svg></i>
+                                Email</h5>
+                            <p class="icon-font">noreply@envato.com</p>
+
+                        </div>
+
+                        <div class="p-5">
+
+                       
+                            <h5><i><svg class="icon-sz11 p-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#75FBFD"><path
+                                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" /></svg></i>
+                                Location</h5>
+                            <p class="fnt2 fs-6">Level 13, 2 Elizabeth <br>
+                                St, Melbourne,<br>
+                                Victoria 3000 <br>
+                                Australia</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- dd------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get the current page's URL path
-            const currentPage = window.location.pathname;
 
-            // Select all nav links
-            const navLinks = document.querySelectorAll('.nav-link');
-            // Loop through each link
-            navLinks.forEach(link => {
-                // Compare the href with the current page path
-                if (link.getAttribute('href') === currentPage) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-        });
-    </script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
 
-</body>
+        <div class="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-color">
+            <h1 class="form-title mt-5 fs-4 custom-font-1  ">Contact Form</h1>
+            <h2 class="form-subtitle  fs-1 custom-font-1 ">Fill the Form</h2>
+            <form class="form-container">
+                <div class="form-row mb-3 d-flex justify-content-between">
+                    <div class="col">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col ml-3">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-block">Send</button>
+            </form>
+        </div>
+        
 
+        
+        <!-- footer------------------------------------------------------------------------------------------------------------- -->
+
+        <footer>
+            <div class="bg-color">
+                <div class="container">
+                    <div class="d-flex justify-content-center p-5">
+                        <img class="w-25" src="/contactimg/logo.png"
+                            alt="logo" />
+                    </div>
+                    <div class="text-center">
+                        <p>
+                            Nulla mauris dolor, gravida a varius blandit, auctor
+                            eget
+                            purus.<br />
+                            Phasellus scelerisque sapien sit amet mauris
+                            laoreet, eget.
+                        </p>
+                    </div>
+                </div>
+                <div class="row p-5 align-items-center">
+                    <div
+                        class="col-12 col-md-7 mb-2 mb-md-0 text-center text-md-left">
+                        <p class="mb-0">
+                            © 2021 Betheme by
+                            <a href="https://muffingroup.com/"
+                                class="text-decoration-none">Muffin group</a>
+                            | All Rights Reserved | Powered by
+                            <a href="https://wordpress.org/">WordPress</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 text-center text-md-right py-5">
+                        <a href="#"
+                            class="text-decoration-none p-2 link-bk-clr">About
+                            us</a>
+                        <a href="#"
+                            class="text-decoration-none p-2 link-bk-clr">Service</a>
+                        <a href="#"
+                            class="text-decoration-none p-2 link-bk-clr">Pricing</a>
+                        <a href="#"
+                            class="text-decoration-none p-2 link-bk-clr">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="contact.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 </html>
